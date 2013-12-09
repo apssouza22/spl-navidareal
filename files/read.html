@@ -1,0 +1,12 @@
+Finally, the last iterator I’d like to focus on is the
+LimitIterator. This iterator provides
+functionality for returning limited results from an iterator. In its
+simplest form, you can pass an iterator object to it (such as a
+DirectoryIterator object, as Example 7
+illustrates) and include an offset and the number of items to return. In
+Example 7, we tell the LimitIterator to start at
+index 2 (the third element) and limit the results to three items. This
+iterator could be extended and combined with the
+FilterIterator to provide a powerful mechanism
+for iterating through database recordsets, limiting and filtering out
+specific records, for example.
