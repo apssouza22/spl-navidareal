@@ -1,10 +1,12 @@
 <?php
 
+$arr = array("Banana", "Abacaxi", "Abacate", "Morango");
+$iter = new ArrayIterator($arr);
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// loop through the object
+foreach ($iter as $key => $value) {
+    echo $key . ":  " . $value . "<br>";
+}
 
-
+$iter->rewind();
+echo 'O primeiro - '. $iter->current();

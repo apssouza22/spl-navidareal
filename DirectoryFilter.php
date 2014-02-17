@@ -4,6 +4,11 @@ ini_set('display_errors', 'On');
 ini_set('display_startup_errors', 'On');
 
 
+$dir = new DirectoryIterator(__DIR__);  
+foreach ($dir as $file) {
+    echo $file->getFilename().'<br>';
+}
+
 //retirando as pastas ./ e ../ da listagem
 class DirectoryFilterDots extends FilterIterator
 {
